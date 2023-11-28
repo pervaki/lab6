@@ -1,0 +1,14 @@
+﻿@model List<lab6.Models.MenuItem>
+@using lab6.Models;
+
+<div class="sidebar">
+    @if (Model != null && Model.Any())
+    {
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li><a href="@item.Url">@item.Name</a></li>
+            }
+        </ul>
+    }
+</div>

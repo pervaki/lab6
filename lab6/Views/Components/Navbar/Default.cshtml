@@ -1,0 +1,11 @@
+﻿@model List<MenuItem>
+@using lab6.Models;
+
+<nav class="navbar">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li><a href="@item.Url">@item.Name</a></li>
+        }
+    </ul>
+</nav>
